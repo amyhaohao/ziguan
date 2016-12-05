@@ -1,0 +1,9 @@
+[{"id":"1","name":"客户名称1","riskevaluation":"稳健型","buydate":"2016-10-31","phone":"13812345678","idnum":"310675388765338766","bookdate":"2016-10-21","status":"预约"},
+ {"id":"2","name":"客户名称2","riskevaluation":"保守型","buydate":"2016-10-31","phone":"13834535345","idnum":"310115199012122341","bookdate":"2016-10-21","status":"预约"},{"id":"3","name":"客户名称3","riskevaluation":"保守型","buydate":"2016-10-31","phone":"13856746453","idnum":"310456456376834475","bookdate":"2016-10-21","status":"预约"},
+ {"id":"4","name":"客户名称4","riskevaluation":"积极型","buydate":"2016-10-31","phone":"13865764563","idnum":"310769687984568643","bookdate":"2016-10-21","status":"已购买"},
+ {"id":"5","name":"客户名称5","riskevaluation":"稳健型","buydate":"2016-10-31","phone":"13945678573","idnum":"310658586565824234","bookdate":"2016-10-21","status":"预约"},
+ {"id":"6","name":"客户名称6","riskevaluation":"稳健型","buydate":"2016-10-31","phone":"13876978775","idnum":"312355466654657845","bookdate":"2016-10-21","status":"预约"},
+ {"id":"7","name":"客户名称7","riskevaluation":"保守型","buydate":"2016-10-31","phone":"13856786456","idnum":"310768799980090907","bookdate":"2016-10-21","status":"已购买"},
+ {"id":"8","name":"客户名称8","riskevaluation":"积极型","buydate":"2016-10-31","phone":"13876999965","idnum":"310456687834666768","bookdate":"2016-10-21","status":"已购买"},
+ {"id":"9","name":"客户名称9","riskevaluation":"稳健型","buydate":"2016-10-31","phone":"13889898956","idnum":"310435657887976545","bookdate":"2016-10-21","status":"预约"},
+ {"id":"10","name":"客户名称10","riskevaluation":"稳健型","buydate":"2016-10-31","phone":"13898087687","idnum":"310678798793457673","bookdate":"2016-10-21","status":"已购买"}]

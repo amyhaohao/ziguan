@@ -1,0 +1,10 @@
+[{"id":"1","name":"资管产品1","period":"认购期","channel":"管理型","type":"自营","status":"上线","time":"2019-01-03","bought":"16","booked":"49","modifytime":""},
+ {"id":"2","name":"资管产品2","period":"认购期","channel":"通道型","type":"自营","status":"上线","time":"2019-01-03","bought":"16","booked":"49","modifytime":""},
+ {"id":"3","name":"资管产品3","period":"认购期","channel":"管理型","type":"自营","status":"上线","time":"2019-01-03","bought":"16","booked":"49","modifytime":""},
+ {"id":"4","name":"资管产品4","period":"认购期","channel":"通道型","type":"代销","status":"上线","time":"2019-01-03","bought":"16","booked":"49","modifytime":""},
+ {"id":"5","name":"资管产品5","period":"封闭期","channel":"管理型","type":"代销","status":"上线","time":"2019-01-03","bought":"16","booked":"49","modifytime":""},
+ {"id":"6","name":"资管产品6","period":"认购期","channel":"管理型","type":"自营","status":"下架","time":"2019-01-03","bought":"16","booked":"49","modifytime":""},
+ {"id":"7","name":"资管产品7","period":"封闭期","channel":"通道型","type":"代销","status":"上线","time":"2019-01-03","bought":"16","booked":"49","modifytime":""},
+ {"id":"8","name":"资管产品8","period":"认购期","channel":"通道型","type":"自营","status":"下架","time":"2019-01-03","bought":"16","booked":"49","modifytime":""},
+ {"id":"9","name":"资管产品9","period":"正常开放","channel":"管理型","type":"代销","status":"上线","time":"2019-01-03","bought":"16","booked":"49","modifytime":""},
+ {"id":"10","name":"资管产品10","period":"正常开放","channel":"管理型","type":"自营","status":"上线","time":"2019-01-03","bought":"16","booked":"49","modifytime":""}]
