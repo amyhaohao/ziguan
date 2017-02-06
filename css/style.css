@@ -146,6 +146,10 @@ a{color:#2a2931;text-decoration:none;cursor: pointer}
 .passView{padding:0 30px 0 50px;}
 .passView .input span{letter-spacing: 0;width:120px;text-align: right;padding-right:20px;}
 
+.prefersView .tabs{text-align: center;line-height: 30px;margin:-10px 0;}
+.prefersView .tabs a{display: inline-block;width:85px;border:1px solid #1ca3fe;font-size: 16px;vertical-align: middle}
+.prefersView .tabs .bg-blue{font-size: 18px;cursor:default;}
+
 .fade-transition {
   transition: opacity .8s ease;
 }

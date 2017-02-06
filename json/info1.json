@@ -1,0 +1,10 @@
+[{"name":"姓名","phone":"联系方式","job":"职业","interested":"股票管理类","size":"2000万-5000万","profit":"1~5%","risk":"中","remark":"备注","cdate":"2017-02-05"},
+{"name":"姓名2","phone":"联系方式2","job":"职业2","interested":"期货管理类","size":"2000万-5000万","profit":"5~10%","risk":"低","remark":"备注2","cdate":"2017-02-05"},
+{"name":"姓名3","phone":"联系方式3","job":"职业3","interested":"期货管理类","size":"500-2000万","profit":">10%","risk":"高","remark":"备注3","cdate":"2017-02-05"},
+{"name":"姓名4","phone":"联系方式4","job":"职业4","interested":"股票管理类","size":"2000万-5000万","profit":"5~10%","risk":"中","remark":"备注4","cdate":"2017-02-05"},
+{"name":"姓名5","phone":"联系方式5","job":"职业5","interested":"期货管理类","size":"2000万-5000万","profit":"1~5%","risk":"低","remark":"备注5","cdate":"2017-02-05"},
+{"name":"姓名6","phone":"联系方式6","job":"职业6","interested":"期货管理类","size":"500-2000万","profit":"5~10%","risk":"高","remark":"备注6","cdate":"2017-02-05"},
+{"name":"姓名7","phone":"联系方式7","job":"职业7","interested":"股票管理类","size":"2000万-5000万","profit":">10%","risk":"中","remark":"备注7","cdate":"2017-02-05"},
+{"name":"姓名8","phone":"联系方式8","job":"职业8","interested":"期货管理类","size":"2000万-5000万","profit":"1~5%","risk":"低","remark":"备注8","cdate":"2017-02-05"},
+{"name":"姓名9","phone":"联系方式9","job":"职业9","interested":"期货管理类","size":"500-2000万","profit":"5~10%","risk":"高","remark":"备注9","cdate":"2017-02-05"},
+{"name":"姓名10","phone":"联系方式10","job":"职业10","interested":"期货管理类","size":"500-2000万","profit":">10%","risk":"高","remark":"备注10","cdate":"2017-02-05"}]
