@@ -1,0 +1,1 @@
+setContract("<div class='tit'>银期转账协议书</div><div>甲方：</div><div>乙方：</div><div class='tit2' style='margin-top:25px'>第一章 总则</div><div>总则总则总则总则总则</div><div class='tit2'>第二章 总则</div><div>总则总则</div>");
