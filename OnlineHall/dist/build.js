@@ -12198,11 +12198,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "rel"
-  }, [_c('div', [_vm._v("上传身份证正面")])])
+  }, [_c('div', [_vm._v("上传身份证正面")]), _c('input', {
+    attrs: {
+      "type": "file",
+      "accept": "image/jpeg,image/x-png"
+    }
+  })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "rel r2"
-  }, [_c('div', [_vm._v("上传身份证反面")])])
+  }, [_c('div', [_vm._v("上传身份证反面")]), _c('input', {
+    attrs: {
+      "type": "file",
+      "accept": "image/jpeg,image/x-png"
+    }
+  })])
 }]}
 if (false) {
   module.hot.accept()
@@ -12876,7 +12886,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "new"
   }, [_vm._v("\n            新银期信息\n            "), _c('div', {
     staticClass: "block"
-  }, [_c('div', [_vm._v("上传银行卡正面")])])])
+  }, [_c('div', [_vm._v("上传银行卡正面")]), _c('input', {
+    attrs: {
+      "type": "file",
+      "accept": "image/jpeg,image/x-png"
+    }
+  })])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "block list info"
