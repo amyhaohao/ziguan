@@ -808,6 +808,7 @@ textarea:focus {
   color: #1a1a1a;
   font-size: 16px;
   line-height: 20px;
+  padding-right: 13px;
   max-height: 255px;
   overflow-y: auto;
 }
@@ -819,14 +820,10 @@ textarea:focus {
   top: 17px;
 }
 .tradeV .all::-webkit-scrollbar {
-  width: 15px;
-  background: rgba(0, 0, 0, 0);
-}
-.tradeV .all::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
+  width: 2px;
 }
 .tradeV .all::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
 }
 .emailV .h {
   line-height: 44px;
