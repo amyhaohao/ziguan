@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -7199,7 +7199,7 @@ setTimeout(function () {
 
 /* harmony default export */ __webpack_exports__["default"] = (Vue$3);
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(7)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(8)))
 
 /***/ }),
 /* 1 */
@@ -7209,10 +7209,10 @@ var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
 /* script */
-__vue_exports__ = __webpack_require__(25)
+__vue_exports__ = __webpack_require__(26)
 
 /* template */
-var __vue_template__ = __webpack_require__(26)
+var __vue_template__ = __webpack_require__(27)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -7247,23 +7247,67 @@ module.exports = __vue_exports__
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(40)
+
+/* template */
+var __vue_template__ = __webpack_require__(41)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "D:\\work\\my\\OnlineHall\\src\\components\\bank.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1d925232", __vue_options__)
+  } else {
+    hotAPI.reload("data-v-1d925232", __vue_options__)
+  }
+})()}
+if (__vue_options__.functional) {console.error("[vue-loader] bank.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mint_ui_lib_swipe_item_style_css__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mint_ui_lib_swipe_item_style_css__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_mint_ui_lib_swipe_item_style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_mint_ui_lib_swipe_item_style_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_mint_ui_lib_swipe_item__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_mint_ui_lib_swipe_item__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_mint_ui_lib_swipe_item___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_mint_ui_lib_swipe_item__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mint_ui_lib_swipe_style_css__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mint_ui_lib_swipe_style_css__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_mint_ui_lib_swipe_style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_mint_ui_lib_swipe_style_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_mint_ui_lib_swipe__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_mint_ui_lib_swipe__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_mint_ui_lib_swipe___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_mint_ui_lib_swipe__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vue_router__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__style_less__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vue_router__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__style_less__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__style_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__style_less__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_app_vue__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_app_vue__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_app_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__components_app_vue__);
 
 
@@ -7317,6 +7361,7 @@ __WEBPACK_IMPORTED_MODULE_4_vue__["default"].filter("time", function (v) {
     d.setTime(v);
     return d.getFullYear() + "-" + f2(d.getMonth() + 1) + "-" + f2(d.getDate()) + " " + f2(d.getHours()) + ":" + f2(d.getMinutes());
 });
+__WEBPACK_IMPORTED_MODULE_4_vue__["default"].component("icode", __webpack_require__(50));
 
 String.prototype.ellipse = function (l) {
     !l && (l = 40);
@@ -7326,16 +7371,16 @@ String.prototype.ellipse = function (l) {
 __WEBPACK_IMPORTED_MODULE_7__components_app_vue___default.a.router = new __WEBPACK_IMPORTED_MODULE_5_vue_router__["a" /* default */]({
     routes: [{
         path: "/",
-        component: __webpack_require__(13)
+        component: __webpack_require__(14)
     }, {
         path: "/home",
-        component: __webpack_require__(16)
+        component: __webpack_require__(17)
     }, {
         path: "/biz/more",
-        component: __webpack_require__(19)
+        component: __webpack_require__(20)
     }, {
         path: "/biz/phone",
-        component: __webpack_require__(22)
+        component: __webpack_require__(23)
     }, {
         path: "/biz/id",
         component: __webpack_require__(1)
@@ -7344,29 +7389,30 @@ __WEBPACK_IMPORTED_MODULE_7__components_app_vue___default.a.router = new __WEBPA
         component: __webpack_require__(1)
     }, {
         path: "/biz/active",
-        component: __webpack_require__(34)
+        component: __webpack_require__(28)
     }, {
         path: "/biz/trade",
-        component: __webpack_require__(37)
+        component: __webpack_require__(31)
     }, {
         path: "/biz/email",
-        component: __webpack_require__(40)
+        component: __webpack_require__(34)
     }, {
         path: "/biz/address",
-        component: __webpack_require__(43)
+        component: __webpack_require__(37)
     }, {
         path: "/biz/bank",
-        component: __webpack_require__(46)
+        component: __webpack_require__(2)
     }, {
         path: "/biz/bank/:id",
-        component: __webpack_require__(46)
+        component: __webpack_require__(2)
     }, {
         path: "/mybiz",
-        component: __webpack_require__(27)
+        component: __webpack_require__(42)
     }]
 });
 
 __WEBPACK_IMPORTED_MODULE_7__components_app_vue___default.a.router.beforeEach(function (to, from, next) {
+    window.scrollTo(0, 0);
     //    if(to.path == "/" && from.path!="/") {
     //        next(false);
     //        return;
@@ -7385,13 +7431,13 @@ if (/iPhone/.test(navigator.userAgent)) {
 }
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports) {
 
 module.exports =
@@ -7656,13 +7702,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /******/ });
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports =
@@ -8675,7 +8721,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /******/ });
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports) {
 
 var g;
@@ -8702,7 +8748,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11173,23 +11219,23 @@ if (inBrowser && window.Vue) {
 
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
 /* script */
-__vue_exports__ = __webpack_require__(11)
+__vue_exports__ = __webpack_require__(12)
 
 /* template */
-var __vue_template__ = __webpack_require__(12)
+var __vue_template__ = __webpack_require__(13)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -11223,7 +11269,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports) {
 
 //
@@ -11253,7 +11299,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -11292,17 +11338,17 @@ if (false) {
 }
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
 /* script */
-__vue_exports__ = __webpack_require__(14)
+__vue_exports__ = __webpack_require__(15)
 
 /* template */
-var __vue_template__ = __webpack_require__(15)
+var __vue_template__ = __webpack_require__(16)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -11336,7 +11382,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports) {
 
 //
@@ -11364,7 +11410,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -11399,11 +11445,11 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "code"
   }, [_c('input', {
     attrs: {
-      "type": "number",
+      "type": "text",
       "placeholder": "验证码",
       "maxlength": "4"
     }
-  }), _c('i'), _c('img')])])
+  }), _c('img')])])
 }]}
 if (false) {
   module.hot.accept()
@@ -11413,17 +11459,17 @@ if (false) {
 }
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
 /* script */
-__vue_exports__ = __webpack_require__(17)
+__vue_exports__ = __webpack_require__(18)
 
 /* template */
-var __vue_template__ = __webpack_require__(18)
+var __vue_template__ = __webpack_require__(19)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -11457,7 +11503,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports) {
 
 //
@@ -11517,7 +11563,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -11602,17 +11648,17 @@ if (false) {
 }
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
 /* script */
-__vue_exports__ = __webpack_require__(20)
+__vue_exports__ = __webpack_require__(21)
 
 /* template */
-var __vue_template__ = __webpack_require__(21)
+var __vue_template__ = __webpack_require__(22)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -11646,7 +11692,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports) {
 
 //
@@ -11688,7 +11734,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -11738,17 +11784,17 @@ if (false) {
 }
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
 /* script */
-__vue_exports__ = __webpack_require__(23)
+__vue_exports__ = __webpack_require__(24)
 
 /* template */
-var __vue_template__ = __webpack_require__(24)
+var __vue_template__ = __webpack_require__(25)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -11782,7 +11828,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports) {
 
 //
@@ -11810,19 +11856,38 @@ module.exports = {
     methods: {
         submit: function submit() {
             t.$root.msg = "您已成功提交申请，我们会尽快处理。您可以在【我的业务办理】中查看办理进度。";
+        },
+        send: function send() {
+            t.$refs.code.countdown();
         }
     },
     mounted: function mounted() {}
 };
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "phoneV"
-  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('div', {
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "block list"
+  }, [_vm._m(1), _vm._v(" "), _c('div', {
+    staticClass: "code"
+  }, [_c('input', {
+    attrs: {
+      "type": "tel",
+      "placeholder": "请输入短信验证码",
+      "maxlength": "6",
+      "pattern": "[0-9]*"
+    }
+  }), _c('icode', {
+    ref: "code",
+    on: {
+      "click": _vm.send
+    }
+  })], 1)]), _vm._v(" "), _c('div', {
     staticClass: "con"
   }, [_c('input', {
     staticClass: "btn",
@@ -11839,22 +11904,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "old"
   }, [_vm._v("当前手机号码"), _c('span', [_vm._v("150****2342")])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "block list"
-  }, [_c('div', [_c('input', {
+  return _c('div', [_c('input', {
     attrs: {
-      "type": "tel",
-      "placeholder": "请输入新手机号码"
+      "type": "number",
+      "placeholder": "请输入新手机号码",
+      "pattern": "[0-9]*",
+      "maxlength": "11"
     }
-  })]), _vm._v(" "), _c('div', {
-    staticClass: "code"
-  }, [_c('input', {
-    attrs: {
-      "type": "tel",
-      "placeholder": "请输入短信验证码",
-      "maxlength": "6"
-    }
-  }), _c('span', [_vm._v("点击获取")])])])
+  })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "tips"
@@ -11868,7 +11925,7 @@ if (false) {
 }
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 //
@@ -11923,23 +11980,21 @@ module.exports = {
     data: function data() {
         t = this;
         t.$root.title = "身份证变更";
-        return {};
+        return {
+            checked: false
+        };
     },
 
-    methods: {},
-    mounted: function mounted() {
-        console.log("dddd");
-    },
-
-    watch: {
-        $route: function $route(to) {
-            console.log(to);
+    methods: {
+        send: function send() {
+            t.$refs.code.countdown();
         }
-    }
+    },
+    mounted: function mounted() {}
 };
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -11994,7 +12049,26 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       expression: "!$route.params.id"
     }],
     staticClass: "s1"
-  }, [_vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _vm._m(3), _vm._v(" "), _c('div', {
+  }, [_vm._m(1), _vm._v(" "), _c('div', {
+    staticClass: "new"
+  }, [_vm._v("\n           新有效期"), _c('a', {
+    on: {
+      "click": function($event) {
+        _vm.checked = !_vm.checked
+      }
+    }
+  }, [_c('i', {
+    staticClass: "icon check",
+    class: {
+      checked: _vm.checked
+    }
+  }), _vm._v("长期有效")])]), _vm._v(" "), _c('div', {
+    staticClass: "block list"
+  }, [_vm._m(2), _vm._v(" "), (!_vm.checked) ? _c('div', [_vm._v("失效日期"), _vm._m(3), _c('input', {
+    attrs: {
+      "type": "date"
+    }
+  })]) : _vm._e()]), _vm._v(" "), _c('div', {
     staticClass: "con"
   }, [_c('input', {
     staticClass: "btn",
@@ -12038,7 +12112,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "s3"
   }, [_c('div', {
     staticClass: "con"
-  }, [_vm._v("当前账户绑定手机号码为150****2323，请输入短信验证码完成身份证变更。")]), _vm._v(" "), _vm._m(6), _vm._v(" "), _c('div', {
+  }, [_vm._v("当前账户绑定手机号码为150****2323，请输入短信验证码完成身份证变更。")]), _vm._v(" "), _c('div', {
+    staticClass: "block list"
+  }, [_c('div', {
+    staticClass: "code"
+  }, [_c('input', {
+    attrs: {
+      "type": "number",
+      "placeholder": "请输入短信验证码",
+      "pattern": "[0-9]*",
+      "maxlength": "6"
+    }
+  }), _c('icode', {
+    ref: "code",
+    on: {
+      "click": _vm.send
+    }
+  })], 1)]), _vm._v(" "), _c('div', {
     staticClass: "con"
   }, [_c('input', {
     staticClass: "btn",
@@ -12061,23 +12151,21 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "old"
   }, [_c('div', [_vm._v("身份证"), _c('span', [_vm._v("1111111111111111")])]), _vm._v(" "), _c('div', [_vm._v("原有效期"), _c('span', [_vm._v("2017-11-23 至 2022-11-11")])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "new"
-  }, [_vm._v("\n           新有效期"), _c('a', [_c('i', {
-    staticClass: "icon check checked"
-  }), _vm._v("长期有效")])])
+  return _c('div', [_vm._v("起效日期"), _c('span', {
+    staticClass: "r"
+  }, [_vm._v("2017-11-11"), _c('i', {
+    staticClass: "icon more2"
+  })]), _c('input', {
+    attrs: {
+      "type": "date"
+    }
+  })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "block list"
-  }, [_c('div', [_vm._v("起效日期"), _c('span', {
+  return _c('span', {
     staticClass: "r"
   }, [_vm._v("2017-11-11"), _c('i', {
-    staticClass: "icon more"
-  })])]), _vm._v(" "), _c('div', [_vm._v("失效日期"), _c('span', {
-    staticClass: "r"
-  }, [_vm._v("2017-11-11"), _c('i', {
-    staticClass: "icon more"
-  })])])])
+    staticClass: "icon more2"
+  })])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "rel"
@@ -12086,17 +12174,6 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: "rel r2"
   }, [_c('div', [_vm._v("上传身份证反面")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "block list"
-  }, [_c('div', {
-    staticClass: "code"
-  }, [_c('input', {
-    attrs: {
-      "type": "tel",
-      "placeholder": "请输入短信验证码"
-    }
-  }), _c('a', [_vm._v("点击获取")])])])
 }]}
 if (false) {
   module.hot.accept()
@@ -12106,17 +12183,713 @@ if (false) {
 }
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
 /* script */
-__vue_exports__ = __webpack_require__(28)
+__vue_exports__ = __webpack_require__(29)
 
 /* template */
-var __vue_template__ = __webpack_require__(29)
+var __vue_template__ = __webpack_require__(30)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "D:\\work\\my\\OnlineHall\\src\\components\\active.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-326421f1", __vue_options__)
+  } else {
+    hotAPI.reload("data-v-326421f1", __vue_options__)
+  }
+})()}
+if (__vue_options__.functional) {console.error("[vue-loader] active.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports) {
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var t;
+module.exports = {
+    data: function data() {
+        t = this;
+        t.$root.title = "休眠账户激活";
+        return {};
+    },
+
+    methods: {
+        send: function send() {
+            t.$refs.code.countdown();
+        }
+    },
+    mounted: function mounted() {}
+};
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "activeV"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "phone"
+  }, [_vm._v("当前账户绑定手机号码为150****2323，请输入短信验证码完成休眠账户激活。")]), _vm._v(" "), _c('div', {
+    staticClass: "block list"
+  }, [_c('div', {
+    staticClass: "code"
+  }, [_c('input', {
+    attrs: {
+      "type": "number",
+      "placeholder": "请输入短信验证码",
+      "maxlength": "6",
+      "pattern": "[0-9]*"
+    }
+  }), _c('icode', {
+    ref: "code",
+    on: {
+      "click": _vm.send
+    }
+  })], 1)]), _vm._v(" "), _c('div', {
+    staticClass: "con"
+  }, [_c('input', {
+    staticClass: "btn",
+    attrs: {
+      "type": "button",
+      "value": "提交"
+    },
+    on: {
+      "click": function($event) {}
+    }
+  })])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "h"
+  }, [_c('i', {
+    staticClass: "icon"
+  }), _vm._v("办理该业务前请先完成最新《适当性评估》")])
+}]}
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-326421f1", module.exports)
+  }
+}
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(32)
+
+/* template */
+var __vue_template__ = __webpack_require__(33)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "D:\\work\\my\\OnlineHall\\src\\components\\trade.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-60a98f6e", __vue_options__)
+  } else {
+    hotAPI.reload("data-v-60a98f6e", __vue_options__)
+  }
+})()}
+if (__vue_options__.functional) {console.error("[vue-loader] trade.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var t;
+module.exports = {
+    data: function data() {
+        t = this;
+        t.$root.title = "交易系统切换";
+        return {
+            show: false
+        };
+    },
+
+    methods: {
+        send: function send() {
+            this.$refs.code.countdown();
+        }
+    },
+    mounted: function mounted() {}
+};
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "tradeV"
+  }, [_c('div', {
+    staticClass: "block list"
+  }, [_c('div', {
+    on: {
+      "click": function($event) {
+        _vm.show = !_vm.show
+      }
+    }
+  }, [_vm._v("海通CTP"), _c('i', {
+    staticClass: "icon",
+    class: {
+      up: _vm.show
+    }
+  })]), _vm._v(" "), _c('div', {
+    staticClass: "code"
+  }, [_c('input', {
+    attrs: {
+      "type": "number",
+      "placeholder": "请输入短信验证码",
+      "maxlength": "6",
+      "pattern": "[0-9]*"
+    }
+  }), _c('icode', {
+    ref: "code",
+    on: {
+      "click": _vm.send
+    }
+  })], 1)]), _vm._v(" "), _c('div', {
+    staticClass: "con"
+  }, [_c('input', {
+    staticClass: "btn",
+    attrs: {
+      "type": "button",
+      "value": "提交"
+    },
+    on: {
+      "click": function($event) {}
+    }
+  })]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.show),
+      expression: "show"
+    }],
+    staticClass: "all list"
+  }, _vm._l(([1, 2, 3, 4, 5, 6]), function(i) {
+    return _c('div', {
+      class: {
+        active: i == 1
+      }
+    }, [_vm._v("金仕达"), (i == 1) ? _c('i', {
+      staticClass: "icon gou"
+    }) : _vm._e()])
+  }))])
+},staticRenderFns: []}
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-60a98f6e", module.exports)
+  }
+}
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(35)
+
+/* template */
+var __vue_template__ = __webpack_require__(36)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "D:\\work\\my\\OnlineHall\\src\\components\\email.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-212db681", __vue_options__)
+  } else {
+    hotAPI.reload("data-v-212db681", __vue_options__)
+  }
+})()}
+if (__vue_options__.functional) {console.error("[vue-loader] email.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports) {
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var t;
+module.exports = {
+    data: function data() {
+        t = this;
+        t.$root.title = "邮箱变更";
+        return {
+            show: false
+        };
+    },
+
+    methods: {},
+    mounted: function mounted() {}
+};
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "emailV"
+  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('div', {
+    staticClass: "con"
+  }, [_c('input', {
+    staticClass: "btn",
+    attrs: {
+      "type": "button",
+      "value": "提交"
+    },
+    on: {
+      "click": function($event) {}
+    }
+  })]), _vm._v(" "), _vm._m(2)])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "h"
+  }, [_vm._v("当前邮箱账号"), _c('span', [_vm._v("2344*****.com")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "block list"
+  }, [_c('div', [_c('input', {
+    attrs: {
+      "type": "email",
+      "placeholder": "请输入新邮箱"
+    }
+  })]), _vm._v(" "), _c('div', [_c('input', {
+    attrs: {
+      "type": "email",
+      "placeholder": "请再次输入新邮箱"
+    }
+  })])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "tips"
+  }, [_c('div', [_vm._v("业务须知：")]), _vm._v("\n        提交变更申请后，我们客服人员会对新邮箱进行电话回访，回访后新邮箱账号正式生效。\n    ")])
+}]}
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-212db681", module.exports)
+  }
+}
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(38)
+
+/* template */
+var __vue_template__ = __webpack_require__(39)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "D:\\work\\my\\OnlineHall\\src\\components\\address.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-0952bb99", __vue_options__)
+  } else {
+    hotAPI.reload("data-v-0952bb99", __vue_options__)
+  }
+})()}
+if (__vue_options__.functional) {console.error("[vue-loader] address.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+
+module.exports = __vue_exports__
+
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports) {
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var t;
+module.exports = {
+    data: function data() {
+        t = this;
+        t.$root.title = "地址变更";
+        return {
+            show: false
+        };
+    },
+
+    methods: {},
+    mounted: function mounted() {}
+};
+
+/***/ }),
+/* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "addressV"
+  }, [_vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "d"
+  }, [_vm._v("新地址信息")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('div', {
+    staticClass: "con"
+  }, [_c('input', {
+    staticClass: "btn",
+    attrs: {
+      "type": "button",
+      "value": "提交"
+    },
+    on: {
+      "click": function($event) {}
+    }
+  })])])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "h"
+  }, [_vm._v("当前地址\n        "), _c('div', [_vm._v("地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址")])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "block"
+  }, [_c('textarea', {
+    attrs: {
+      "placeholder": "请输入详细地址"
+    }
+  })])
+}]}
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-0952bb99", module.exports)
+  }
+}
+
+/***/ }),
+/* 40 */
+/***/ (function(module, exports) {
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+var t;
+module.exports = {
+    data: function data() {
+        t = this;
+        t.$root.title = "银期变更";
+        return {
+            checked: false
+        };
+    },
+
+    methods: {
+        loadContract: function loadContract() {
+            if (!t.$refs.contract.innerHTML) {
+                window.setContract = function (c) {
+                    t.$refs.contract.innerHTML = c;
+                };
+                var s = document.createElement("script");
+                s.src = "js/contract.js";
+                t.$refs.contract.appendChild(s);
+            }
+            t.$router.push("/biz/bank/3");
+        }
+    },
+    mounted: function mounted() {},
+
+    watch: {
+        $route: function $route(to) {
+            if (!to.params.id) t.$root.title = "银期变更";else if (to.params.id == 2) t.$root.title = "银行卡选择";else t.$root.title = "协议签署";
+        }
+    }
+};
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "bankV"
+  }, [_c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (!_vm.$route.params.id),
+      expression: "!$route.params.id"
+    }]
+  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('div', {
+    staticClass: "con agree"
+  }, [_c('div', [_c('i', {
+    staticClass: "icon check",
+    class: {
+      checked: _vm.checked
+    },
+    on: {
+      "click": function($event) {
+        _vm.checked = !_vm.checked
+      }
+    }
+  }), _vm._v("已阅读并同意"), _c('a', {
+    on: {
+      "click": _vm.loadContract
+    }
+  }, [_vm._v("《银期协议电子版》")])]), _vm._v(" "), _c('input', {
+    staticClass: "btn",
+    attrs: {
+      "type": "button",
+      "value": "提交"
+    },
+    on: {
+      "click": function($event) {}
+    }
+  })])]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.params.id == 2),
+      expression: "$route.params.id==2"
+    }],
+    staticClass: "block list banks"
+  }, _vm._l(([1, 2, 3, 4]), function(i) {
+    return _c('div', [_c('i', {
+      staticClass: "b"
+    }), _vm._v("中国工商银行"), (i == 1) ? _c('i', {
+      staticClass: "icon gou"
+    }) : _vm._e()])
+  })), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.$route.params.id == 3),
+      expression: "$route.params.id==3"
+    }],
+    ref: "contract",
+    staticClass: "contract"
+  })])
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "h"
+  }, [_c('div', [_vm._v("当前银期绑定")]), _vm._v(" "), _c('div')])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "new"
+  }, [_vm._v("\n            新银期信息\n            "), _c('div', {
+    staticClass: "block"
+  }, [_c('div', [_vm._v("上传银行卡正面")])])])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "block list info"
+  }, [_c('div', [_c('input', {
+    attrs: {
+      "type": "text",
+      "placeholder": "请输入开户姓名"
+    }
+  })]), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "#/biz/bank/2"
+    }
+  }, [_c('i', {
+    staticClass: "b"
+  }), _vm._v("中国工商银行"), _c('i', {
+    staticClass: "icon more2"
+  })]), _vm._v(" "), _c('div', [_c('input', {
+    attrs: {
+      "type": "number",
+      "placeholder": "请输入银行卡号",
+      "pattern": "[0-9]*",
+      "maxlength": "26"
+    }
+  })]), _vm._v(" "), _c('div', [_c('input', {
+    attrs: {
+      "type": "text",
+      "placeholder": "请输入开户行信息（xx分行 xx支行）"
+    }
+  })])])
+}]}
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1d925232", module.exports)
+  }
+}
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(43)
+
+/* template */
+var __vue_template__ = __webpack_require__(44)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -12150,7 +12923,7 @@ module.exports = __vue_exports__
 
 
 /***/ }),
-/* 28 */
+/* 43 */
 /***/ (function(module, exports) {
 
 //
@@ -12207,7 +12980,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 29 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -12307,21 +13080,22 @@ if (false) {
 }
 
 /***/ }),
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = {}
 
 /* script */
-__vue_exports__ = __webpack_require__(35)
+__vue_exports__ = __webpack_require__(51)
 
 /* template */
-var __vue_template__ = __webpack_require__(36)
+var __vue_template__ = __webpack_require__(52)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -12333,7 +13107,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "D:\\work\\my\\OnlineHall\\src\\components\\active.vue"
+__vue_options__.__file = "D:\\work\\my\\OnlineHall\\src\\components\\code.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -12344,696 +13118,66 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-326421f1", __vue_options__)
+    hotAPI.createRecord("data-v-2c4a3e18", __vue_options__)
   } else {
-    hotAPI.reload("data-v-326421f1", __vue_options__)
+    hotAPI.reload("data-v-2c4a3e18", __vue_options__)
   }
 })()}
-if (__vue_options__.functional) {console.error("[vue-loader] active.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+if (__vue_options__.functional) {console.error("[vue-loader] code.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 
 module.exports = __vue_exports__
 
 
 /***/ }),
-/* 35 */
+/* 51 */
 /***/ (function(module, exports) {
 
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
-var t;
+var interval;
 module.exports = {
     data: function data() {
-        t = this;
-        t.$root.title = "休眠账户激活";
-        return {};
-    },
-
-    methods: {},
-    mounted: function mounted() {}
-};
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "activeV"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "phone"
-  }, [_vm._v("当前账户绑定手机号码为150****2323，请输入短信验证码完成休眠账户激活。")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('div', {
-    staticClass: "con"
-  }, [_c('input', {
-    staticClass: "btn",
-    attrs: {
-      "type": "button",
-      "value": "提交"
-    },
-    on: {
-      "click": function($event) {}
-    }
-  })])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "h"
-  }, [_c('i', {
-    staticClass: "icon"
-  }), _vm._v("办理该业务前请先完成最新《适当性评估》")])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "block list"
-  }, [_c('div', {
-    staticClass: "code"
-  }, [_c('input', {
-    attrs: {
-      "type": "tel",
-      "placeholder": "请输入短信验证码"
-    }
-  }), _c('a', [_vm._v("点击获取")])])])
-}]}
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-326421f1", module.exports)
-  }
-}
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* script */
-__vue_exports__ = __webpack_require__(38)
-
-/* template */
-var __vue_template__ = __webpack_require__(39)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "D:\\work\\my\\OnlineHall\\src\\components\\trade.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-60a98f6e", __vue_options__)
-  } else {
-    hotAPI.reload("data-v-60a98f6e", __vue_options__)
-  }
-})()}
-if (__vue_options__.functional) {console.error("[vue-loader] trade.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports) {
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-var t;
-module.exports = {
-    data: function data() {
-        t = this;
-        t.$root.title = "交易系统切换";
         return {
-            show: false
-        };
-    },
-
-    methods: {},
-    mounted: function mounted() {}
-};
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "tradeV"
-  }, [_c('div', {
-    staticClass: "block list"
-  }, [_c('div', {
-    on: {
-      "click": function($event) {
-        _vm.show = !_vm.show
-      }
-    }
-  }, [_vm._v("海通CTP"), _c('i', {
-    staticClass: "icon",
-    class: {
-      up: _vm.show
-    }
-  })]), _vm._v(" "), _vm._m(0)]), _vm._v(" "), _c('div', {
-    staticClass: "con"
-  }, [_c('input', {
-    staticClass: "btn",
-    attrs: {
-      "type": "button",
-      "value": "提交"
-    },
-    on: {
-      "click": function($event) {}
-    }
-  })]), _vm._v(" "), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.show),
-      expression: "show"
-    }],
-    staticClass: "all list"
-  }, _vm._l(([1, 2, 3, 4, 5, 6]), function(i) {
-    return _c('div', {
-      class: {
-        active: i == 1
-      }
-    }, [_vm._v("金仕达"), _c('i', {
-      directives: [{
-        name: "show",
-        rawName: "v-show",
-        value: (i == 1),
-        expression: "i==1"
-      }],
-      staticClass: "icon"
-    })])
-  }))])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "code"
-  }, [_c('input', {
-    attrs: {
-      "type": "tel",
-      "placeholder": "请输入短信验证码"
-    }
-  }), _c('a', [_vm._v("点击获取")])])
-}]}
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-60a98f6e", module.exports)
-  }
-}
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* script */
-__vue_exports__ = __webpack_require__(41)
-
-/* template */
-var __vue_template__ = __webpack_require__(42)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "D:\\work\\my\\OnlineHall\\src\\components\\email.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-212db681", __vue_options__)
-  } else {
-    hotAPI.reload("data-v-212db681", __vue_options__)
-  }
-})()}
-if (__vue_options__.functional) {console.error("[vue-loader] email.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 41 */
-/***/ (function(module, exports) {
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-var t;
-module.exports = {
-    data: function data() {
-        t = this;
-        t.$root.title = "邮箱变更";
-        return {
-            show: false
-        };
-    },
-
-    methods: {},
-    mounted: function mounted() {}
-};
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "emailV"
-  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('div', {
-    staticClass: "con"
-  }, [_c('input', {
-    staticClass: "btn",
-    attrs: {
-      "type": "button",
-      "value": "提交"
-    },
-    on: {
-      "click": function($event) {}
-    }
-  })]), _vm._v(" "), _vm._m(2)])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "h"
-  }, [_vm._v("当前邮箱账号"), _c('span', [_vm._v("2344*****.com")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "block list"
-  }, [_c('div', [_c('input', {
-    attrs: {
-      "type": "email",
-      "placeholder": "请输入新邮箱"
-    }
-  })]), _vm._v(" "), _c('div', [_c('input', {
-    attrs: {
-      "type": "email",
-      "placeholder": "请再次输入新邮箱"
-    }
-  })])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "tips"
-  }, [_c('div', [_vm._v("业务须知：")]), _vm._v("\n        提交变更申请后，我们客服人员会对新邮箱进行电话回访，回访后新邮箱账号正式生效。\n    ")])
-}]}
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-212db681", module.exports)
-  }
-}
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* script */
-__vue_exports__ = __webpack_require__(44)
-
-/* template */
-var __vue_template__ = __webpack_require__(45)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "D:\\work\\my\\OnlineHall\\src\\components\\address.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0952bb99", __vue_options__)
-  } else {
-    hotAPI.reload("data-v-0952bb99", __vue_options__)
-  }
-})()}
-if (__vue_options__.functional) {console.error("[vue-loader] address.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports) {
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-var t;
-module.exports = {
-    data: function data() {
-        t = this;
-        t.$root.title = "地址变更";
-        return {
-            show: false
-        };
-    },
-
-    methods: {},
-    mounted: function mounted() {}
-};
-
-/***/ }),
-/* 45 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "addressV"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
-    staticClass: "d"
-  }, [_vm._v("新地址信息")]), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('div', {
-    staticClass: "con"
-  }, [_c('input', {
-    staticClass: "btn",
-    attrs: {
-      "type": "button",
-      "value": "提交"
-    },
-    on: {
-      "click": function($event) {}
-    }
-  })])])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "h"
-  }, [_vm._v("当前地址\n        "), _c('div', [_vm._v("地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址地址")])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "block"
-  }, [_c('textarea', {
-    attrs: {
-      "placeholder": "请输入详细地址"
-    }
-  })])
-}]}
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-0952bb99", module.exports)
-  }
-}
-
-/***/ }),
-/* 46 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* script */
-__vue_exports__ = __webpack_require__(47)
-
-/* template */
-var __vue_template__ = __webpack_require__(48)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "D:\\work\\my\\OnlineHall\\src\\components\\bank.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1d925232", __vue_options__)
-  } else {
-    hotAPI.reload("data-v-1d925232", __vue_options__)
-  }
-})()}
-if (__vue_options__.functional) {console.error("[vue-loader] bank.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-
-module.exports = __vue_exports__
-
-
-/***/ }),
-/* 47 */
-/***/ (function(module, exports) {
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-var t;
-module.exports = {
-    data: function data() {
-        t = this;
-        t.$root.title = "银期变更";
-        return {
-            checked: false
+            count: 0
         };
     },
 
     methods: {
-        loadContract: function loadContract() {
-            if (!t.$refs.contract.innerHTML) {
-                window.setContract = function (c) {
-                    t.$refs.contract.innerHTML = c;
-                };
-                var s = document.createElement("script");
-                s.src = "js/contract.js";
-                t.$refs.contract.appendChild(s);
-            }
-            t.$router.push("/biz/bank/3");
+        send: function send() {
+            if (!this.count) this.$emit("click");
+        },
+        countdown: function countdown() {
+            var _this = this;
+
+            this.count = 60;
+            interval = setInterval(function () {
+                --_this.count;
+                if (!_this.count) clearInterval(interval);
+            }, 1000);
         }
     },
-    mounted: function mounted() {},
-
-    watch: {
-        $route: function $route(to) {
-            if (!to.params.id) t.$root.title = "银期变更";else if (to.params.id == 2) t.$root.title = "银行卡选择";else t.$root.title = "协议签署";
-        }
+    beforeDestroy: function beforeDestroy() {
+        clearInterval(interval);
     }
 };
 
 /***/ }),
-/* 48 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "bankV"
-  }, [_c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (!_vm.$route.params.id),
-      expression: "!$route.params.id"
-    }]
-  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _vm._m(2), _vm._v(" "), _c('div', {
-    staticClass: "con agree"
-  }, [_c('div', [_c('i', {
-    staticClass: "icon check",
-    class: {
-      checked: _vm.checked
-    },
+  return _c('a', {
     on: {
-      "click": function($event) {
-        _vm.checked = !_vm.checked
-      }
+      "click": _vm.send
     }
-  }), _vm._v("已阅读并同意"), _c('a', {
-    on: {
-      "click": _vm.loadContract
-    }
-  }, [_vm._v("《银期协议电子版》")])]), _vm._v(" "), _c('input', {
-    staticClass: "btn",
-    attrs: {
-      "type": "button",
-      "value": "提交"
-    },
-    on: {
-      "click": function($event) {}
-    }
-  })])]), _vm._v(" "), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.params.id == 2),
-      expression: "$route.params.id==2"
-    }],
-    staticClass: "block list banks"
-  }, _vm._l(([1, 2, 3, 4]), function(i) {
-    return _c('div', [_c('i', {
-      staticClass: "b"
-    }), _vm._v("中国工商银行"), (i == 1) ? _c('i', {
-      staticClass: "icon gou"
-    }) : _vm._e()])
-  })), _vm._v(" "), _c('div', {
-    directives: [{
-      name: "show",
-      rawName: "v-show",
-      value: (_vm.$route.params.id == 3),
-      expression: "$route.params.id==3"
-    }],
-    ref: "contract",
-    staticClass: "contract"
-  })])
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "h"
-  }, [_c('div', [_vm._v("当前银期绑定")]), _vm._v(" "), _c('div')])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "new"
-  }, [_vm._v("\n            新银期信息\n            "), _c('div', {
-    staticClass: "block"
-  }, [_c('div', [_vm._v("上传银行卡正面")])])])
-},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "block list info"
-  }, [_c('div', [_c('input', {
-    attrs: {
-      "type": "text",
-      "placeholder": "请输入开户姓名"
-    }
-  })]), _vm._v(" "), _c('a', {
-    attrs: {
-      "href": "#/biz/bank/2"
-    }
-  }, [_c('i', {
-    staticClass: "b"
-  }), _vm._v("中国工商银行"), _c('i', {
-    staticClass: "icon"
-  })]), _vm._v(" "), _c('div', [_c('input', {
-    attrs: {
-      "type": "number",
-      "placeholder": "请输入银行卡号",
-      "pattern": "[0-9]*"
-    }
-  })]), _vm._v(" "), _c('div', [_c('input', {
-    attrs: {
-      "type": "text",
-      "placeholder": "请输入开户行信息（xx分行 xx支行）"
-    }
-  })])])
-}]}
+  }, [_vm._v(_vm._s(!_vm.count ? "点击获取" : "重新获取(" + _vm.count + ")"))])
+},staticRenderFns: []}
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-1d925232", module.exports)
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-2c4a3e18", module.exports)
   }
 }
 
