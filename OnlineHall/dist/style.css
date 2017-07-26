@@ -46,8 +46,6 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-}
-*:active {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
@@ -219,6 +217,7 @@ textarea:focus {
   background: #36c;
   border-radius: 5px;
   font-size: 18px;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 .btn:active {
   background: #5c90f9;
@@ -871,6 +870,7 @@ textarea:focus {
   font-size: 18px;
   text-align: center;
   margin-top: 5px;
+  position: relative;
 }
 .bankV .new .block div {
   background: url(4.png) no-repeat 13px 0px;
@@ -880,7 +880,7 @@ textarea:focus {
   width: 130px;
   left: 50%;
   top: 50%;
-  margin: -166px 0 0 -65px;
+  margin: -60px 0 0 -65px;
 }
 .bankV .new .block input {
   position: absolute;
