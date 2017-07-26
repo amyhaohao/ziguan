@@ -7413,6 +7413,7 @@ __WEBPACK_IMPORTED_MODULE_7__components_app_vue___default.a.router = new __WEBPA
 
 __WEBPACK_IMPORTED_MODULE_7__components_app_vue___default.a.router.beforeEach(function (to, from, next) {
     window.scrollTo(0, 0);
+    app && app.msg && (app.msg = "");
     //    if(to.path == "/" && from.path!="/") {
     //        next(false);
     //        return;
@@ -7420,7 +7421,7 @@ __WEBPACK_IMPORTED_MODULE_7__components_app_vue___default.a.router.beforeEach(fu
     next();
 });
 
-new __WEBPACK_IMPORTED_MODULE_4_vue__["default"](__WEBPACK_IMPORTED_MODULE_7__components_app_vue___default.a);
+var app = new __WEBPACK_IMPORTED_MODULE_4_vue__["default"](__WEBPACK_IMPORTED_MODULE_7__components_app_vue___default.a);
 
 if (/iPhone/.test(navigator.userAgent)) {
     $(document).on("focus", "input,textarea", function () {
@@ -11291,9 +11292,22 @@ module.exports = {
     data: function data() {
         t = this;
         return {
-            title: "掌上营业厅",
-            msg: ""
+            title: "",
+            msg: "",
+            cls: ""
         };
+    },
+
+    methods: {
+        info: function info(msg, cls, callback) {
+            this.msg = msg;
+            this.cls = cls || "";
+            this.callback = callback;
+        },
+        confirm: function confirm() {
+            this.callback && this.callback();
+            this.msg = "";
+        }
     },
     mounted: function mounted() {}
 };
@@ -11321,14 +11335,25 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }],
     staticClass: "mask"
   }, [_c('div', {
-    staticClass: "pop"
-  }, [_c('div', [_vm._v(_vm._s(_vm.msg))]), _vm._v(" "), _c('a', {
+    staticClass: "pop",
+    class: _vm.cls
+  }, [_c('div', {
+    domProps: {
+      "innerHTML": _vm._s(_vm.msg)
+    }
+  }), _vm._v(" "), _c('div', {
+    staticClass: "btns"
+  }, [_c('a', {
     on: {
       "click": function($event) {
         _vm.msg = ''
       }
     }
-  }, [_vm._v("确定")])])])], 1)
+  }, [_vm._v("取消")]), _c('a', {
+    on: {
+      "click": _vm.confirm
+    }
+  }, [_vm._v("确定")])])])])], 1)
 },staticRenderFns: []}
 if (false) {
   module.hot.accept()
@@ -11404,7 +11429,7 @@ module.exports = {
 
     methods: {
         login: function login() {
-            alert("login");
+            this.$router.replace("/home");
         }
     }
 };
@@ -11546,6 +11571,7 @@ var t;
 module.exports = {
     data: function data() {
         t = this;
+        t.$root.title = "掌上营业厅";
         return {
             biz: { "phone": "手机号变更",
                 "id": "身份证变更",
@@ -11610,7 +11636,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: "r view",
       on: {
         "click": function($event) {
-          _vm.$root.msg = '消息消息消息消息消息消息消息消息消息消息消息消息'
+          _vm.$root.info('消息消息消息消息消息消息消息消息消息消息消息消息')
         }
       }
     }, [_vm._v("查看")])])
@@ -11877,7 +11903,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "code"
   }, [_c('input', {
     attrs: {
-      "type": "tel",
+      "type": "number",
       "placeholder": "请输入短信验证码",
       "maxlength": "6",
       "pattern": "[0-9]*"
@@ -12069,7 +12095,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "type": "date"
     }
   })]) : _vm._e()]), _vm._v(" "), _c('div', {
-    staticClass: "con"
+    staticClass: "con",
+    class: {
+      con2: _vm.checked
+    }
   }, [_c('input', {
     staticClass: "btn",
     attrs: {
@@ -12401,16 +12430,16 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_c('div', {
     staticClass: "block list"
   }, [_c('div', {
+    class: {
+      up: _vm.show
+    },
     on: {
       "click": function($event) {
         _vm.show = !_vm.show
       }
     }
   }, [_vm._v("海通CTP"), _c('i', {
-    staticClass: "icon",
-    class: {
-      up: _vm.show
-    }
+    staticClass: "icon"
   })]), _vm._v(" "), _c('div', {
     staticClass: "code"
   }, [_c('input', {
@@ -12742,7 +12771,8 @@ module.exports = {
         t = this;
         t.$root.title = "银期变更";
         return {
-            checked: false
+            checked: false,
+            readed: false
         };
     },
 
@@ -12756,7 +12786,13 @@ module.exports = {
                 s.src = "js/contract.js";
                 t.$refs.contract.appendChild(s);
             }
+            t.readed = true;
             t.$router.push("/biz/bank/3");
+        },
+        submit: function submit() {
+            if (!t.readed) {
+                t.$root.info("请先阅读<br>《银期转账协议电子版》", "confirm");
+            }
         }
     },
     mounted: function mounted() {},
@@ -12805,7 +12841,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "value": "提交"
     },
     on: {
-      "click": function($event) {}
+      "click": _vm.submit
     }
   })])]), _vm._v(" "), _c('div', {
     directives: [{

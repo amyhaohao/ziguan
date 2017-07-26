@@ -263,25 +263,41 @@ textarea:focus {
   position: absolute;
   left: 50%;
   top: 50%;
-  margin: -50px 0 0 -135px;
+  margin: -80px 0 0 -135px;
   width: 270px;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
 }
-.mask .pop div {
+.mask .pop div:first-child {
   padding: 18px 27px 18px 27px;
   color: #1a1a1a;
   font-size: 18px;
   min-height: 84px;
 }
-.mask .pop a {
-  display: block;
+.mask .pop .btns {
+  border-top: 1px solid #e4e7f0;
   color: #36c;
   font-size: 17px;
   line-height: 44px;
   text-align: center;
-  border-top: 1px solid #e4e7f0;
+}
+.mask .pop a {
+  display: block;
+}
+.mask .pop a:first-child {
+  display: none;
+  border-right: 1px solid #e4e7f0;
+}
+.mask .pop a:last-child {
+  font-weight: bold;
+}
+.mask .pop.confirm div:first-child {
+  text-align: center;
+}
+.mask .pop.confirm a {
+  width: 50%;
+  display: inline-block;
 }
 .block {
   background: #fff;
@@ -511,7 +527,7 @@ textarea:focus {
   color: #36c;
 }
 .myBiz .list .v .txt-r {
-  line-height: 21px;
+  line-height: 20px;
   vertical-align: middle;
   color: #fe0000;
 }
@@ -676,6 +692,7 @@ textarea:focus {
 .idV .s1 .list {
   color: #1a1a1a;
   font-size: 16px;
+  line-height: 20px;
 }
 .idV .s1 .list .r {
   color: #36c;
@@ -692,6 +709,9 @@ textarea:focus {
   height: 50px;
   opacity: 0;
 }
+.idV .s1 .con2 {
+  margin-top: 111px;
+}
 .idV .s2 {
   font-size: 14px;
   margin-top: -10px;
@@ -707,7 +727,7 @@ textarea:focus {
   width: 130px;
   left: 50%;
   top: 50%;
-  margin: -69px 0 0 -65px;
+  margin: -65px 0 0 -65px;
   color: #36c;
   font-size: 18px;
   text-align: center;
@@ -754,7 +774,10 @@ textarea:focus {
   height: 7px;
   background-position: -15px -340px;
 }
-.tradeV .block .up {
+.tradeV .up {
+  color: #36c;
+}
+.tradeV .up .icon {
   background-position: -15px -348px;
 }
 .tradeV .all {
@@ -844,7 +867,7 @@ textarea:focus {
   width: 130px;
   left: 50%;
   top: 50%;
-  margin: -160px 0 0 -65px;
+  margin: -166px 0 0 -65px;
 }
 .bankV .info {
   font-size: 16px;
@@ -856,7 +879,7 @@ textarea:focus {
 .bankV .info a .icon {
   position: absolute;
   right: 15px;
-  top: 17px;
+  top: 18px;
 }
 .bankV .agree {
   color: #1a1a1a;
