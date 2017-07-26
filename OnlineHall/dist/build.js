@@ -12411,6 +12411,8 @@ module.exports = __vue_exports__
 //
 //
 //
+//
+//
 
 var t;
 module.exports = {
@@ -12482,7 +12484,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       value: (_vm.show),
       expression: "show"
     }],
-    staticClass: "all list"
+    staticClass: "all"
+  }, [_c('div', {
+    staticClass: "list"
   }, _vm._l(([1, 2, 3, 4, 5, 6]), function(i) {
     return _c('div', {
       class: {
@@ -12491,7 +12495,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_vm._v("金仕达"), (i == 1) ? _c('i', {
       staticClass: "icon gou"
     }) : _vm._e()])
-  }))])
+  }))])])
 },staticRenderFns: []}
 if (false) {
   module.hot.accept()
