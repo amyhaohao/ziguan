@@ -305,6 +305,15 @@ textarea:focus {
   width: 50%;
   display: inline-block;
 }
+.app {
+  padding-top: 0;
+}
+.app .title {
+  display: none;
+}
+.app .mask {
+  top: 0;
+}
 .block {
   background: #fff;
   border-top: 1px solid #e4e7f0;
@@ -575,11 +584,10 @@ textarea:focus {
 }
 .loginV .code img {
   position: absolute;
-  top: 9px;
+  top: 10px;
   right: 15px;
-  width: 60px;
-  height: 31px;
-  background: #36c;
+  width: 81px;
+  height: 29px;
 }
 .phoneV .old {
   line-height: 44px;
@@ -827,7 +835,7 @@ textarea:focus {
 }
 .tradeV .all .list::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.2);
-  border-radius: 1px;
+  border-radius: 2px;
 }
 .emailV .h {
   line-height: 44px;
