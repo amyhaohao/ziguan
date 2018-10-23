@@ -14,17 +14,14 @@
         #words{height:40px;line-height: 20px; font-size:20px;overflow-y: scroll;margin: 10px 0 15px;}  
         input{margin-left:10px;width:50px;}
         .btns{display: none;}
-        .btns a{display:inline-block;text-decoration: none;width:70px;line-height:70px;text-align: center;background: #aaa;border-radius: 35px;position: fixed;}
-        .btns i{border-style: solid;border-width: 10px;display: inline-block;vertical-align: middle}
+        .btns a{display:inline-block;text-decoration: none;width:90px;line-height:90px;text-align: center;background: #aaa;border-radius: 545px;position: fixed;}
+        .btns i{border-style: solid;border-width: 20px;display: inline-block;vertical-align: middle}
         .btns .a2{background: #888}
-        .btns .prev{left:10px;bottom:135px;}
+        .btns .prev{left:20px;bottom:135px;}
         .btns .prev i{border-color: transparent #fff transparent transparent;border-left-width: 0}
-        .btns .play{left:90px;bottom:100px;width:140px;line-height: 140px;border-radius: 70px;}
-        .btns .play i{border-width: 30px 0 30px 30px; border-color: transparent transparent transparent #fff;}
-        .btns .up{right:15px;bottom:175px;}
-        .btns .up i{border-color: transparent transparent #fff;border-top-width: 0}
-        .btns .down{right:15px;bottom:100px;}
-        .btns .down i{border-color: #fff transparent transparent;border-bottom-width: 0}
+        .btns .play{right:20px;bottom:100px;width:180px;line-height: 180px;border-radius: 90px;}
+        .btns .play i{border-width: 40px 0 40px 40px; border-color: transparent transparent transparent #fff;}
+        .ios #words{margin-top:70px;}
         .ios .btns{display: block}
         
     </style>
@@ -4120,8 +4117,6 @@ PT…A
     <div class="btns">
         <a class="a1 prev" onclick="prev()"><i></i></a>
         <a class="a1 play" onclick="play()"><i></i></a>
-        <a class="a2 up" onclick="up()"><i></i></a>
-        <a class="a2 down" onclick="down()"><i></i></a>
     </div>
 <script>
     var ios = !!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
