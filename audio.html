@@ -11,6 +11,7 @@
     <title></title>
     <style>
         body{margin: 0;padding:0;}
+        #time{display: none;}
         #words{height:40px;line-height: 20px; font-size:20px;overflow-y: scroll;margin: 10px 0 15px;}  
         input{margin-left:10px;width:50px;}
         .btns{display: none;}
@@ -21,110 +22,18 @@
         .btns .prev i{border-color: transparent #fff transparent transparent;border-left-width: 0}
         .btns .play{right:20px;bottom:50px;width:180px;line-height: 180px;border-radius: 90px;}
         .btns .play i{border-width: 40px 0 40px 40px; border-color: transparent transparent transparent #fff;}
+        .ios #time{display: block;position: absolute;left:80px;top:15px;}
         .ios #words{margin-top:70px;}
-        .ios .btns{display: block}
-        
+        .ios .btns{display: block;}
     </style>
 </head>
 <body>
-<audio src="1.mp3" controls="controls" id="audio"></audio><input id="input1"/><input id="input2"/><input type="button" value="ok" onclick="go()"/>
-<pre id="words">231
-00:22:32,605 --> 00:22:36,067
-真调皮，连狗都戏弄
-
-232
-00:22:49,247 --> 00:22:51,583
-说不定它也在戏弄我
-
-233
-00:23:44,052 --> 00:23:47,472
-想不到山坡上会有这种店
-
-234
-00:24:16,334 --> 00:24:18,294
-好漂亮的娃娃
-
-235
-00:24:26,427 --> 00:24:28,513
-你是刚才的猫咪吗？
-
-236
-00:24:40,733 --> 00:24:41,818
-欢迎光临
-
-237
-00:24:41,943 --> 00:24:42,986
-那个…
-
-238
-00:24:43,111 --> 00:24:45,029
-没关系…
-
-239
-00:24:45,196 --> 00:24:46,989
-慢慢看吧
-
-240
-00:24:47,281 --> 00:24:49,367
-反正男爵也挺无聊的
-
-241
-00:24:50,618 --> 00:24:53,454
-男爵是这娃娃的名字吗？
-
-242
-00:24:53,579 --> 00:24:56,833
-对，芬贝尔度·冯·捷杰肯男爵
-
-243
-00:24:56,958 --> 00:24:58,543
-不错的名字吧
-
-244
-00:25:08,052 --> 00:25:09,345
-不好意思
-
-245
-00:25:09,929 --> 00:25:11,681
-谢谢，不要紧的
-
-246
-00:25:11,806 --> 00:25:13,307
-好漂亮的时钟
-
-247
-00:25:13,433 --> 00:25:15,226
-它在某座城堡沉睡已久
-
-248
-00:25:15,351 --> 00:25:17,854
-你看，都生锈了
-
-249
-00:25:22,525 --> 00:25:23,776
-好美哦
-
-250
-00:25:23,985 --> 00:25:25,236
-这又是什么？
-
-251
-00:25:28,156 --> 00:25:30,575
-等我弄好了再让你瞧瞧
-
-252
-00:26:10,865 --> 00:26:13,034
-做得真好，是小矮人吧
-
-253
-00:26:13,159 --> 00:26:15,036
-你很清楚嘛
-
-254
-00:26:15,203 --> 00:26:18,581
-原来小姐也知道小矮人啊
-
-255
+<audio src="1.mp3" controls="controls" id="audio"></audio>
+<div id="time"></div>
+<input id="input1"/><input id="input2"/>
+<input type="button" value="ok" onclick="go()"/>
+<input type="button" value="save" onclick="save()"/>
+<pre id="words">255
 00:26:20,666 --> 00:26:22,794
 看看这个吧
 
@@ -4122,6 +4031,19 @@ PT…A
     var ios = !!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
     if(ios)
         document.body.className = "ios";
+    
+    if(localStorage.time)  
+        audio.oncanplay = function(){
+            audio.currentTime = localStorage.time-0;
+        }
+        
+    setInterval(function(){
+        var t = parseInt(audio.currentTime),
+            seconds = t%60,
+            min = (t-seconds)/60;
+        time.innerHTML = min+":"+(seconds<10?"0":"")+seconds;
+    }, 1000);    
+    
     function prev(){
         audio.pause();
         audio.currentTime -= 2;
@@ -4148,6 +4070,9 @@ PT…A
     }
     function go(){
         audio.currentTime = (input1.value-0)*60+(input2.value-0);
+    }
+    function save(){
+        localStorage.time = audio.currentTime;
     }
 </script>
 </body>
