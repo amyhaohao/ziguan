@@ -2988,8 +2988,11 @@
         if(k=="i")
             return up();
     }
-    window.ontouchstart = function(e){
+    window.ontouchmove = function(e){
         e.preventDefault();
+    }
+    words.ontouchmove = function(e){
+        e.stopPropagation();
     }
     
     function go(){
