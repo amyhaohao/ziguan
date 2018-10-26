@@ -31,7 +31,7 @@
 <div id="time"></div>
 <input id="input1"/><input id="input2"/>
 <input type="button" value="ok" onclick="go()"/>
-<input type="button" value="save" onclick="save()"/>
+<input type="button" value="save" onclick="save()"/>sdfdsf
 <pre id="words">906
 01:15:23,565 --> 01:15:27,736
 对于自己能否变成美丽的石头
@@ -1391,8 +1391,10 @@
     function save(){
         localStorage.time = audio.currentTime;
     }
-    
-    input1.focus();
+
+    setTimeout(function(){
+        input1.focus();
+    }, 5000);
 </script>
 </body>
 </html>
