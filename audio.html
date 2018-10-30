@@ -10,16 +10,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title></title>
     <style>
-        body{margin: 0;padding:0;}
+        body{margin: 0;padding:0 0 0 10px;font-size: 30px;}
         #time{display: none;}
-        #words{height:100px;line-height: 20px; font-size:20px;overflow-y: scroll;margin: 10px 0 15px;}  
-        input{margin-left:10px;width:50px;}
+        #words{height:100px;line-height: 30px; overflow-y: scroll;margin: 10px 0 15px;white-space: pre-wrap}  
+        input{margin-left:0;width:55px;font-size: 30px}
+        input[type='button']{width:80px;}
         .btns{display: none;}
-        .btns a{display:inline-block;text-decoration: none;width:90px;line-height:90px;text-align: center;background: #aaa;border-radius: 545px;position: fixed;}
-        .btns i{border-style: solid;border-width: 20px;display: inline-block;vertical-align: middle}
-        #prevBtn{left:20px;bottom:85px;}
+        .btns a{display:inline-block;text-decoration: none;width:110px;line-height:110px;text-align: center;background: #aaa;border-radius: 55px;position: fixed;}
+        .btns i{border-style: solid;border-width: 26px;display: inline-block;vertical-align: middle}
+        #prevBtn{left:15px;bottom:80px;}
         #prevBtn i{border-color: transparent #fff transparent transparent;border-left-width: 0}
-        #playBtn{right:20px;bottom:50px;width:180px;line-height: 180px;border-radius: 90px;}
+        #playBtn{right:15px;bottom:50px;width:170px;line-height: 170px;border-radius: 85px;}
         #playBtn i{border-width: 40px 0 40px 40px; border-color: transparent transparent transparent #fff;}
         .ios #time{display: block;position: absolute;left:80px;top:10px;}
         .ios #words{margin-top:70px;}
@@ -29,7 +30,8 @@
 <body>
 <audio src="2.mp3?2" controls="controls" id="audio"></audio>
 <div id="time"></div>
-<input id="input1"/><input id="input2"/>
+<input id="input1"/>
+<input id="input2"/>
 <input type="button" value="ok" onclick="go()"/>
 <input type="button" value="save" onclick="save()"/>
 <pre id="words">180
